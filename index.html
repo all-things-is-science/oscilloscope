@@ -323,7 +323,7 @@
   }
 
   // ---------- 発生器モード ----------
-  const FMIN = 1, FMAX = 10000;
+  const FMIN = 1, FMAX = 20000;
   const posToF = p => +(FMIN * Math.pow(FMAX/FMIN, p/1000)).toPrecision(3);
   const fToPos = f => Math.round(1000*Math.log(f/FMIN)/Math.log(FMAX/FMIN));
   function wave(type, ph){ // ph: 位相（周期単位）
